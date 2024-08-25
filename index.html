@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <section class="container">
+            <textarea rows="15" placeholder="Digite seu texto"></textarea>
+           
+            <p class="aviso">
+                <img src="./assets/icone-exclamacao.png" alt="Atenção!">
+                *Não utilize maiúsculas, nem caracteres especiais
+            </p>
+            <div class="container__botoes">
+                <button class="botao-criptografar">Criptografar</button>
+                <button class="botao-descriptografar" disabled>Descriptografar</button>
+                <button class="botao-reset">Início</button>
+            </div>
+        </section>
+        
+        <section class="area-botao"> 
+            <img class="imagem-inicial" src="./assets/imagem-inicial.PNG" alt="Nenhuma Mensagem para Decodificar">
+            
+            <div class="textoSaida">
+                <span class="conteudo-texto"></span>
+            </div>
+            <button class="botao-copiar" disabled>Copiar</button>
+        </section>   
+    </main>
+    
+    <footer></footer>
+    <script src="app.js" defer></script>
+</body>
+</html>

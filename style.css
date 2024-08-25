@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --fonte-principal: "Inter", sans-serif;
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria: #0A3871;
+    --cor-botao-inativo: #D8DFE8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    padding: 2%;
+    justify-content: space-between;
+    gap: 2.5rem;
+    width: 100%;
+    flex-wrap: wrap;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.imagem-inicial {
+    max-width: 300px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 15%;
+}
+
+.container__botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+textarea {
+    padding: 8%;
+    width: 100%;
+    max-width: 75rem;
+    border: none;
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    resize: vertical;
+}
+
+textarea::placeholder {
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-weight: 400;
+}
+
+
+
+.aviso {
+    color: gray;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.botao-copiar {
+    display: block;
+    padding: 5% 10%;
+    font-size: auto;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border: none;
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
+
+.area-botao {
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+    max-height: calc(100vh - 40px)
+}
+
+button {
+    cursor: pointer;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    padding: 5% 25%;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+}
+
+.botao-reset {
+    padding: 5%;
+}
+
+
+.botao-copiar:disabled {
+    background-color: var(--cor-botao-inativo);
+    cursor: not-allowed;
+    color: var(--cor-secundaria);
+}
+
+button:disabled {
+    background-color: var(--cor-botao-inativo);
+    cursor: not-allowed;
+    color: var(--cor-secundaria);
+}
+
+.textoSaida {
+    font-size: 1.5rem;
+    color: gray;
+    display: none;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    max-height: 900px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    flex-shrink: 0;
+    max-height: calc(100vh - 60px);
+    position: relative;
+}
+
+.conteudo-texto {
+    display: block; 
+    margin-bottom: 10px; 
+    color: inherit;
+}
+
+@media (max-width: 1200px) {
+
+   
+    .container {
+        padding: 5%;
+    }
+    .container__botoes {
+        flex-direction: column;
+    }
+
+    .area-botao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
