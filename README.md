@@ -1,6 +1,4 @@
 
----
-
 ## **2. README para o Repositório - *Codificador e Decodificador de Textos***
 
 **README.md**:
