@@ -1,9 +1,3 @@
-
-## **2. README para o Repositório - *Codificador e Decodificador de Textos***
-
-**README.md**:
-
-```markdown
 # 🔐 Codificador e Decodificador de Textos  
 Um projeto simples e funcional para **codificar** e **decodificar** textos, ideal para mensagens secretas!
 
